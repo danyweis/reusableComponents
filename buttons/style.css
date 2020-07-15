@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,600;0,900;1,600;1,900&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 20px;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.btn-1 {
+  cursor: pointer;
+  line-height: 0;
+  font-family: 'Overpass', sans-serif;
+  width: 250px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #edf2f4;
+  border-radius: 15px 0;
+  overflow: hidden;
+  -webkit-box-shadow: 1px 1px 2px #8d99ae;
+          box-shadow: 1px 1px 2px #8d99ae;
+  font-size: 25px;
+  margin: 20px;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.btn-1 .leftBlock {
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  height: 100%;
+  background: #2b2d42;
+  color: #edf2f4;
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 15px 0;
+  -webkit-box-shadow: 1px 1px 2px #8d99ae;
+          box-shadow: 1px 1px 2px #8d99ae;
+}
+
+.btn-1 .rightBlock {
+  color: #2b2d42;
+  width: 75%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+}
+
+.btn-1:hover {
+  border-radius: 0 15px;
+}
+
+.btn-1:hover .leftBlock {
+  border-radius: 0 15px;
+}
+
+/*---------------------------*/
+.btn-2 {
+  cursor: pointer;
+  line-height: 0;
+  font-family: 'Overpass', sans-serif;
+  width: 250px;
+  height: 50px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#5995ED), to(#044389));
+  background-image: linear-gradient(#5995ED, #044389);
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 25px;
+  font-size: 30px;
+  color: #fff;
+}
+
+.btn-2 .leftBlock {
+  background-color: #044389;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px 30px 30px 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.btn-2 .rightBlock {
+  width: 190px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn-2 i {
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.btn-2:hover .leftBlock {
+  -webkit-transform: rotate(-270deg);
+          transform: rotate(-270deg);
+}
+
+.btn-2:hover i {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+/*-------------------*/
+.btn-3 {
+  width: 80px;
+  height: 80px;
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btn-3 .leftBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50% 50% 50% 10%;
+  background-image: linear-gradient(45deg, #044389, #5995ED);
+  color: #fff;
+  width: 70px;
+  height: 70px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.btn-3 i {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  font-size: 40px;
+}
+
+.btn-3 .block {
+  -webkit-box-shadow: 0 5px 5px -7px #000;
+          box-shadow: 0 5px 5px -7px #000;
+  -webkit-transition: 750ms;
+  transition: 750ms;
+}
+
+.btn-3:hover .block {
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+}
+
+/*-------------------------*/
+.btn-4 {
+  width: 250px;
+  height: 60px;
+  margin: 20px;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn-4 .block {
+  height: 50px;
+  width: 50px;
+  background-color: #fff;
+  border-radius: 30px;
+  margin: 5px;
+  padding: 5px;
+  position: relative;
+}
+
+.btn-4 .block::after {
+  content: "";
+  height: 7px;
+  width: 10px;
+  background: #fff;
+  position: absolute;
+  top: -5px;
+  left: 20px;
+}
+
+.btn-4 .leftBlock {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+  font-size: 25px;
+}
+
+.btn-4 .rightBlock {
+  width: 190px;
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+}
+
+.btn-5 {
+  width: 200px;
+  height: 60px;
+  margin: 20px;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 5px 5px -7px #000;
+          box-shadow: 0 5px 5px -7px #000;
+}
+
+.btn-5 .block {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ccc), to(#fff));
+  background-image: linear-gradient(#ccc, #fff);
+  margin: 5px;
+  border: 3px solid #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 3px 3px 5px #555;
+          box-shadow: 3px 3px 5px #555;
+}
+
+/* COLORS */
+.btn-01 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(orange), to(#dd2c00));
+  background-image: linear-gradient(orange, #dd2c00);
+}
+
+.btn-02 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f9ff21), to(#f8b739));
+  background-image: linear-gradient(#f9ff21, #f8b739);
+}
+
+.btn-03 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ccda46), to(#697c37));
+  background-image: linear-gradient(#ccda46, #697c37);
+}
+
+.btn-04 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#5995ED), to(#044389));
+  background-image: linear-gradient(#5995ED, #044389);
+}
+
+.btn-11 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#dd2c00), to(orange));
+  background-image: linear-gradient(#dd2c00, orange);
+}
+
+.btn-12 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f8b739), to(#f9ff21));
+  background-image: linear-gradient(#f8b739, #f9ff21);
+}
+
+.btn-13 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#697c37), to(#ccda46));
+  background-image: linear-gradient(#697c37, #ccda46);
+}
+
+.btn-14 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#044389), to(#5995ED));
+  background-image: linear-gradient(#044389, #5995ED);
+}
+
+.btn-21 {
+  background-image: -webkit-gradient(linear, left top, right top, from(#dd2c00), to(orange));
+  background-image: linear-gradient(90deg, #dd2c00, orange);
+}
+
+.btn-22 {
+  background-image: -webkit-gradient(linear, left top, right top, from(#f8b739), to(#f9ff21));
+  background-image: linear-gradient(90deg, #f8b739, #f9ff21);
+}
+
+.btn-23 {
+  background-image: -webkit-gradient(linear, left top, right top, from(#697c37), to(#ccda46));
+  background-image: linear-gradient(90deg, #697c37, #ccda46);
+}
+
+.btn-24 {
+  background-image: -webkit-gradient(linear, left top, right top, from(#044389), to(#5995ED));
+  background-image: linear-gradient(90deg, #044389, #5995ED);
+}
