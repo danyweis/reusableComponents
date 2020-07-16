@@ -21,7 +21,7 @@ body
   cursor: pointer
   line-height: 0
   font-family: 'Overpass', sans-serif
-  width: 250px
+  width: 200px
   height: 50px
   display: flex
   align-items: center
@@ -62,7 +62,7 @@ body
   cursor: pointer
   line-height: 0
   font-family: 'Overpass', sans-serif
-  width: 250px
+  width: 200px
   height: 50px
   background-image: linear-gradient($blueClear, $blueDark)
   margin: 20px
@@ -81,7 +81,7 @@ body
     align-items: center
     transition: 500ms
   .rightBlock
-    width: 190px
+    width: 140px
     display: flex
     justify-content: center
     align-items: center
@@ -123,13 +123,41 @@ body
 
 /*-------------------------*/ 
 
+.btn-3a
+  width: 80px
+  height: 80px
+  margin: 20px
+  display: flex
+  justify-content: center
+  .leftBlock
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 50%
+    background-image: linear-gradient( $blueDark, $blueClear)
+    color: #fff
+    width: 70px
+    height: 70px
+    border: solid 5px $blueClear
+  i
+    font-size: 40px
+  .block
+    box-shadow: 0 5px 5px -7px #000
+    transition: 750ms
+  &:hover
+    .block
+      transform: rotateY(360deg)
+
+/*-------------------------*/ 
+
 .btn-4
-  width: 250px
+  width: 200px
   height: 60px
   margin: 20px
   border-radius: 30px
   display: flex
   align-items: center
+  font-family: 'Overpass', sans-serif
   .block
     height: 50px
     width: 50px
@@ -154,11 +182,11 @@ body
     justify-content: center
     align-items: center
     color: #ffffff
-    font-size: 25px
+    font-size: 20px
   .rightBlock
-    width: 190px
+    width: 130px
     color: #fff
-    font-size: 30px
+    font-size: 25px
     text-align: center
 
 .btn-5
@@ -169,8 +197,9 @@ body
   display: flex
   align-items: center
   box-shadow: 0 5px 5px -7px #000
+  font-family: 'Overpass', sans-serif
   .block
-    // background-color: #ffffff
+    font-size: 25px
     height: 50px
     width: 50px
     border-radius: 50%
@@ -181,6 +210,45 @@ body
     justify-content: center
     align-items: center
     box-shadow: 3px 3px 5px #555
+  .rightBlock
+    width: 125px
+    text-align: center
+    font-size: 25px
+
+/*---------------------------------*/ 
+
+.btn-6
+  width: 200px
+  height: 60px
+  margin: 20px
+  border-radius: 30px
+  display: flex
+  align-items: center
+  box-shadow: 0 5px 5px -7px #000
+  font-family: 'Overpass', sans-serif
+  background-image: radial-gradient(ellipse at center, #fff, $blueClear, $blueDark)
+  .block
+    height: 100%
+    width: 50px
+    background-image: radial-gradient(circle at center, #fff, #bbb)
+    border-radius: 30px 0 0 30px
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 20px
+  .rightBlock
+    width: 150px
+    display: flex
+    flex-direction: column
+    text-align: center
+    text-transform: uppercase
+    font-weight: 900
+    font-size: 20px
+  .line
+    height: 0px
+    width: 70%
+    margin: -10px 0 10px 10%
+    box-shadow: 1px 1px 5px 2px #fff
 
 /* COLORS */ 
 
@@ -210,3 +278,13 @@ body
   background-image: linear-gradient(90deg, #697c37, #ccda46)
 .btn-24
   background-image: linear-gradient(90deg, $blueDark, $blueClear)
+.whiteFont
+  color: #fff
+.orangeFont
+  color: #DE4037
+.yellowFont
+  color: #F4B938
+.greenFont
+  color: #6E8137
+.blueFont
+  color: #0e4d95
